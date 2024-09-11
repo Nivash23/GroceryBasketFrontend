@@ -1,0 +1,494 @@
+#body{
+    width:100vw;
+    height:100%;
+    background-color: rgb(232, 233, 233);
+    margin:-10px -10px -10px -10px; 
+    font-family: sans-serif;
+}
+
+#logo{
+    color:red;
+    font-weight: bolder;
+    font-size: 26px;
+    font-style: italic;
+    margin:20px 20px 20px 120px;
+}
+#logo span{
+    color:black;
+    font-weight:bold;
+    font-size: 17px;
+    font-style:italic;
+}
+#searchbar{
+    display: flex;
+    background-color:white ;
+    width:600px;
+    height:40px;
+    margin:20px 20px 20px 20px;
+    border:1px solid green;
+    border-radius: 5px;
+}
+#sicon{
+    margin:10px 10px 0px 10px;
+}
+#searchbar input{
+    width:550px;
+    outline: none;
+    border: none;
+}
+#Navbuttons{
+    display: flex;
+}
+.navbut{
+    border: 1px solid black;
+    margin:20px 20px 20px 20px;
+    padding:6px 10px 6px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#locbut{
+    background-color: rgb(205, 206, 206);
+    display: flex;
+    
+    /* padding:0px 0px 0px 30px; */
+}
+#locbut .text{
+   margin-top:5px;
+}
+#locicon{
+    font-size: 20px;
+    margin:5px 10px 0px 5px;
+    /* position: absolute; */
+    /* padding: 5px 5px 0px 5px; */
+}
+#signupbut{
+    background-color: black;
+    color:white;
+}
+#navmenus{
+    display: flex;
+}
+#Navigation{
+    background-color: rgb(242, 244, 244);
+    z-index: 1;
+    width:100vw;
+    height:170px;
+
+}
+#navrouters{
+    display:flex;
+    margin:30px 0px 0px 150px;
+
+}
+#navrouters > div{
+    margin:0px 70px 20px 10px;
+    padding:10px 10px 10px 10px;
+    cursor: pointer;   
+}
+.Routeactive{
+    color:rgb(153, 15, 15);
+    border-bottom: 2px solid rgb(153, 15, 15);
+    text-shadow: 3px 6px 8px rgb(153, 15, 15);
+    /* box-shadow: 3px -5px 8px rgb(153, 15, 15) ; */
+}
+#cateroute{
+    background-color: rgba(55, 120, 2, 0.905);
+    color:white;
+    width:200px;
+    height:40px;
+    display: flex;
+    border-radius: 5px;
+}
+#ctext{
+    padding:0px 5px 0px 5px;
+}
+#cicon{
+    margin:3px 0px 0px 10px;
+    padding:0px 5px 0px 5px;
+}
+#advertisement{
+    width:1300px;
+    height:340px;  
+    /* background-color: antiquewhite;  */
+    margin:50px 0px 0px 150px;
+}
+#advertisement img{
+    width:1170px;
+    height:340px; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+#innerbuttons{
+    display: flex;
+    margin:20px 0px 0px 160px;
+}
+
+#innerbuttons #vedabut{
+    background-color:rgba(39, 84, 2, 0.905) ;
+    color: white;
+    padding-top: 15px;
+    /* margin-top: 10px; */
+}
+#innerbuttons #newpassbut{
+    background-color: black;
+    color:white;
+    padding-top: 15px;
+}
+#newpassbut span{
+    color:rgb(172, 121, 28);
+}
+#innerbuttons div{
+    width:130px;
+    height:50px;
+    margin:0px 50px 0px 10px;
+    padding:5px 10px 5px 10px;
+    background-color: rgb(184, 184, 184);
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+#smartcontainer{
+    width:1140px;
+    height:550px;
+    background-color: rgb(198, 198, 196);
+    margin:30px 0px 0px 140px;
+    padding:20px 20px 20px 20px;
+    border-radius: 6px;
+
+}
+#smartcontainer #header{
+    display: flex;
+    justify-content: space-between;
+}
+#smartcontainer #viewlist{
+    display: flex;
+    /* overflow-x: scroll; */
+    /* width:1000px; */
+
+}
+#viewlist div{
+    margin:0px 10px 0px 10px;
+}
+#viewlist #menu{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+#viewlist #backarrow,#forwardarrow{
+    background-color: rgb(227, 228, 229);
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+}
+#smartcontainer #head{
+    font-weight: bold;
+    font-size: 20px;
+}
+#smartcontainer #items{
+    display: flex;
+    margin-top:40px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    
+}
+#items div{
+    margin:0px 10px 0px 10px;
+}
+.regbackbox{
+    width:100vw;
+    height:1500px;
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    margin-top: -700px;
+    z-index: 1;
+    opacity: 0.4;
+}
+.Rinactive{
+    #Regcontainer,.regbackbox{
+        display: none;
+    }
+}
+.Ractive{
+    #Regcontainer,.regbackbox{
+        display: block;
+    }
+}
+.Linactive{
+    #Logcontainer,.regbackbox{
+        display: none;
+    }
+}
+.Lactive{
+    #Logcontainer,.regbackbox{
+        display: block;
+    }
+}
+#Regcontainer{
+    background-color:black;
+    color:white;
+    width:450px;
+    height:570px;
+    border-radius: 10px;
+    position: fixed;
+    margin:-50px 0px 0px 500px;
+    z-index: 2;
+    padding:20px 20px 20px 20px;
+}
+#Rxclose{
+    position: fixed;
+    margin:-40px 0px 0px 435px;
+    cursor: pointer;
+    color:black;
+}
+#Rxclose ion-icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+#Regcontainer .otphead{
+    font-size: 13px;
+    border-bottom: 2px solid orange;
+    width:75px;
+    margin:0px 0px 0px 50px;
+}
+#Regcontainer .head{
+    font-size: 14px;
+    margin:20px 0px 5px 50px;
+    font-weight: bold;
+}
+#Regcontainer input{
+    margin:30px 0px 10px 50px;
+    width:300px;
+    height:40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#regcontainerswitch{
+    margin:20px 0px 0px 80px;
+}
+.Orsplit{
+    margin:20px 0px 0px 70px;
+}
+#Rlogbut{
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#Regcontainer button{
+    background-color: rgb(230, 33, 7);
+    color:white;
+    margin:30px 0px 0px 150px;
+    padding:8px 10px 8px 10px;
+    border-radius: 5px;
+}
+#Logcontainer{
+    background-color:black;
+    color:white;
+    width:450px;
+    height:520px;
+    border-radius: 10px;
+    position: fixed;
+    margin:-50px 0px 0px 500px;
+    z-index: 2;
+    padding:20px 20px 20px 20px;
+}
+#lxclose{
+    position: fixed;
+    margin:-40px 0px 0px 435px;
+    cursor: pointer;
+    color:black;
+}
+#lxclose ion-icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+#Logcontainer .otphead{
+    font-size: 13px;
+    border-bottom: 2px solid orange;
+    width:75px;
+    margin:0px 0px 0px 50px;
+}
+#Logcontainer .head{
+    font-size: 14px;
+    margin:20px 0px 5px 50px;
+    font-weight: bold;
+}
+#Logcontainer input{
+    margin:30px 0px 10px 50px;
+    width:300px;
+    height:40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#logcontainerswitch{
+    margin:20px 0px 0px 80px;
+}
+.Orsplit{
+    margin:20px 0px 0px 70px;
+}
+#Lregbut{
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#Logcontainer button{
+    background-color: rgb(230, 33, 7);
+    color:white;
+    margin:30px 0px 0px 150px;
+    padding:8px 10px 8px 10px;
+    border-radius: 5px;
+}
+#locationcontainer{
+    width:380px;
+    height:450px;
+    position: absolute;
+    background-color: rgb(231, 230, 230);
+    margin:-80px 0px 0px 950px;
+    padding:10px 10px 10px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+#availablelocation #heading{
+    margin:40px 0px 0px -320px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#serviceavailableloc{
+    margin:14px 0px 0px -300px; 
+    z-index: 2;
+}
+.Sinactive{
+    #serviceavailableloc{
+        display: none;
+    }
+}
+#serviceavailableloc #area{
+    cursor: pointer;
+}
+#locationcontainer #head{
+    font-weight: bold;
+}
+#locationcontainer #para{
+    font-size: 13px;
+}
+#locationcontainer #lsearchbar{
+    width:320px;
+    height:35px;
+    background-color:white;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin:30px 0px 0px 20px;
+
+}
+#lsicon{
+    margin:8px 10px 0px 10px;
+}
+#locationcontainer input{
+    width:283px;
+    height: 33px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.Locinactive{
+    #locationcontainer{
+        display: none;
+    }
+}
+.Locactive{
+    #locationcontainer{
+        display: block;
+    }
+}
+#Exoticcontainerhead{
+    font-size: 22px;
+    color:rgb(126, 126, 126);
+    margin:30px 0px 0px 200px;
+}
+#Ayurvedacontainerhead{
+    font-size: 22px;
+    color:rgb(126, 126, 126);
+    margin:30px 0px 0px 200px;
+}
+.categoryhead{
+    font-size: 18px;
+    font-weight: bold;
+    margin:50px 20px 0px 50px;
+}
+.subcatehead{
+    font-size: 15px;
+    cursor: pointer;
+    margin:10px 20px 0px 50px;
+}
+.subcatehead ion-icon{
+    margin:0px 10px 0px 0px;
+}
+#Teacontainerhead{
+   font-size: 22px;
+   color:rgb(126, 126, 126);
+   margin:30px 0px 0px 200px;   
+}
+#Nandinicontainerhead{
+   font-size: 22px;
+   color:rgb(126, 126, 126);
+   margin:30px 0px 0px 200px;   
+}
+#Gheecontainerhead{
+   font-size: 22px;
+   color:rgb(126, 126, 126);
+   margin:30px 0px 0px 200px;   
+}
+#Freshvegcontainerhead{
+   font-size: 22px;
+   color:rgb(126, 126, 126);
+   margin:30px 0px 0px 200px;   
+}
+.catelogcontainer{
+    width:300px;
+    height:300px;
+    /* background-color: rgb(246, 246, 247); */
+    margin:0px 20px 0px 0px;
+    
+}
+.Routecontaineritems{
+    width:1250px;
+    height:700px;
+    background-color: rgb(224, 224, 224);
+    margin-left: 150px;
+    display: flex;
+}
+.catelogcontainer .listcontain{
+    width:250px;
+    height:150px;
+    background-color: white;
+    margin:30px 0px 0px 50px;
+    border-radius: 5px;
+}
+.catelogcontainer .listhead{
+    font-weight: bold;
+    color:rgb(106, 173, 5);
+    cursor: pointer;
+}
+.catelogcontainer .list{
+    margin:13px 0px 0px 20px;
+}
+.list div{
+    margin-top:5px;
+    cursor: pointer;
+}
+.Routecontaineritems .itemscontainer{
+    width:930px;
+    height:700px;
+    background-color: white;
+    overflow: scroll;
+}
+
+
+
